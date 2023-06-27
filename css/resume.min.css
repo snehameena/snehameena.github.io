@@ -461,3 +461,16 @@ ul {
   height: 30px;
   margin-right: 5px; /* Adjust the margin as needed to create spacing between the logo and URL */
 }
+
+#chart-container {
+  width: 250px; 
+  height: 250px; 
+
+}
+
+.text-container {
+  width: 600px; 
+  height:350px;
+  padding-right: 100px; /* Adjust spacing as needed */
+}
+

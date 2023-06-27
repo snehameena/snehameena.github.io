@@ -69,15 +69,29 @@
           <li>6+ years of expertise in <b>Data Science</b> using <b>Python/R</b> (SQL, Keras/TensorFlow, pandas/vaex,api/docker/k8s)</li>  
           <li>Experience in Statistical Analysis & Viz using Tableau & Spotfire </li> <br/>
           <!-- <li>8 years of expertise in Post-Silicon SoC Validation of Mixed-Signal IPs (Baseband/Wireless LAN Data Converters, PLLs, LDO, Op-Amps, References & TSENSE) on State of the
-          Art 5nm Mobile/Modem & RF SoCs</li> -->
-          <b>About Me</b><br/>
-          I am a skilled, ambitious, & motivated individual with a diverse range of experiences
-          & capabilities. I excel at effectively managing multiple tasks on a daily basis
-          while maintaining composure under pressure. My key strengths lie in communication,
-          innovation & cultivating strong relationships to achieve optimal outcomes. I
-          approach problem-solving with a blend of creative and logical thinking. I’m highly
-          organized & possess a quick learning ability, thanks to my abundant neuroplasticity
+          Art 5nm Mobile/Modem & RF SoCs</li> -->          
         </p>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="text-container">
+              <span>
+              <b>About Me</b><br/>
+                I am a skilled, ambitious, & motivated individual with a diverse range of experiences
+              & capabilities. I excel at effectively managing multiple tasks on a daily basis
+              while maintaining composure under pressure. My key strengths lie in communication,
+              innovation & cultivating strong relationships to achieve optimal outcomes. I
+              approach problem-solving with a blend of creative and logical thinking. I’m highly
+              organized & possess a quick learning ability, thanks to my abundant neuroplasticity
+              </span>
+            </div>
+        </div>
+          <div class="col-md-6">
+            <b>My Typical Day</b><br/>
+            <div id="chart-container">
+              <canvas id="donut-chart"></canvas>
+            </div>
+        </div>
+        </div>
         <div class="social-icons">
           <a target="_blank" id="socialicon-1" href="https://linkedin.com/in/vinukarthek">
             <i class="fab fa-linkedin-in"></i>
@@ -446,5 +460,36 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script>
+  // Get the canvas element
+  var canvas = document.getElementById('donut-chart');
+
+  // Create the chart
+  var chart = new Chart(canvas, {
+    type: 'doughnut',
+    data: {
+      labels: ['Sleep', 'Work', 'Hobbies', 'Exercise', 'Reading', 'Personal'],
+      datasets: [
+        {
+          data: [6, 8, 4, 1, 1, 4], // Replace with your own data
+          backgroundColor: ['#FCE9F1', '#36a2eb', '#FFE569', '#FF8551', '#FF0060', '#98EECC'], // Customize colors as needed
+          borderWidth: 0,
+        }
+      ]
+    },
+    options: {
+      cutoutPercentage: 70, // Adjust the cutout percentage to control the thickness of the donut
+      legend: {
+        display: true // Hide the legend if desired
+      },
+      tooltips: {
+        enabled: true // Show tooltips on hover
+      }
+    }
+  });
+
+  </script>
 </body>
 </html>
