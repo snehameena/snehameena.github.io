@@ -450,3 +450,14 @@ ul {
 
 /*UFO*/
 
+.logo {
+  width: 60px; /* Adjust the width and height as needed */
+  height: 25px;
+  margin-right: 5px; /* Adjust the margin as needed to create spacing between the logo and URL */
+}
+
+.square_logo {
+  width: 30px; /* Adjust the width and height as needed */
+  height: 30px;
+  margin-right: 5px; /* Adjust the margin as needed to create spacing between the logo and URL */
+}
